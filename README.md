@@ -1,65 +1,51 @@
+# ProfitPlanner
 
-### Structure du Projet
+ProfitPlanner est une application web interactive conçue pour aider les utilisateurs à calculer la valeur future de leurs investissements mensuels. L'application permet de simuler différents scénarios de rendement et de générer des rapports détaillés avec des visualisations.
 
-```plaintext
-ProfitPlaner/
-│
-├── README.md
-├── main.py
-├── requirements.txt
-├── data/
-│   └── investment_report.txt
-├── src/
-│   ├── __init__.py
-│   ├── investment.py
-│   ├── calculator.py
-│   └── plotter.py
-└── tests/
-    └── test_investment.py
-```
+## Fonctionnalités
 
-### README.md
+- Formulaire d'entrée pour saisir le montant d'investissement mensuel, le taux de rendement annuel, le nombre d'années d'investissement et la fréquence de capitalisation.
+- Calcul de la valeur future des investissements avec intérêts composés.
+- Calcul des revenus annuels générés après la période d'investissement.
+- Graphiques montrant la croissance des investissements au fil du temps.
+- Comparaison de différents scénarios de rendement (optimiste, pessimiste, modéré).
+- Rapport détaillé incluant le montant total investi, le montant total des intérêts gagnés, la valeur future et les revenus annuels.
+- Exportation du rapport au format PDF.
 
-```markdown
-# Investment Calculator
+## Technologies utilisées
 
-## Description
-This project provides a Python script to calculate the future value of monthly investments over a specified period, given an annual return rate. It generates graphs and a detailed textual report of the investment data.
+### Frontend
+
+- HTML/CSS
+- JavaScript (ES6+)
+- React.js
+- Chart.js
+
+### Backend
+
+- Node.js
+- Express.js
+- pdfkit
 
 ## Installation
-1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   cd investment_calculator
-   ```
 
-2. Install the required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
+1. Clonez le dépôt : `git clone https://github.com/votrecompte/profitplanner.git`
+2. Installez les dépendances : `npm install`
 
-## Usage
-Run the script using:
-```bash
-python main.py
-```
+## Utilisation
 
-You will be prompted to enter:
-- Monthly investment amount in euros
-- Annual return rate (in %)
-- Number of years
+1. Démarrez le serveur backend : `npm run server`
+2. Démarrez l'application frontend : `npm start`
+3. Accédez à l'application sur `http://localhost:3000`
 
-## Structure
-- `main.py`: The entry point of the application.
-- `src/investment.py`: Defines the `Investment` class.
-- `src/calculator.py`: Contains the `Calculator` class for computing investment values.
-- `src/plotter.py`: Contains the `Plotter` class for generating graphs.
-- `data/investment_report.txt`: Output report file.
-- `tests/test_investment.py`: Unit tests for the project.
+## Déploiement
 
-## Future Features
-- Adding more investment types
-- Supporting different compounding intervals
-- Enhanced graphical analysis
-```
+L'application peut être déployée en utilisant Docker. Construisez l'image Docker avec `docker build -t profitplanner-app .` et exécutez un conteneur avec `docker run -p 3000:3000 profitplanner-app`.
 
+## Contributeurs
+
+- [PapaPamplemousse](https://github.com/PapaPamplemousse)
+
+## Licence
+
+Ce projet est sous licence [GNU GENERAL PUBLIC LICENSE](LICENSE).
