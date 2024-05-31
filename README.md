@@ -1,18 +1,18 @@
 # ProfitPlanner
 
-ProfitPlanner est une application web interactive conçue pour aider les utilisateurs à calculer la valeur future de leurs investissements mensuels. L'application permet de simuler différents scénarios de rendement et de générer des rapports détaillés avec des visualisations.
+ProfitPlanner is an interactive web application designed to help users calculate the future value of their monthly investments. The application allows users to simulate different return scenarios and generate detailed reports with visualizations.
 
-## Fonctionnalités
+## Features
 
-- Formulaire d'entrée pour saisir le montant d'investissement mensuel, le taux de rendement annuel, le nombre d'années d'investissement et la fréquence de capitalisation.
-- Calcul de la valeur future des investissements avec intérêts composés.
-- Calcul des revenus annuels générés après la période d'investissement.
-- Graphiques montrant la croissance des investissements au fil du temps.
-- Comparaison de différents scénarios de rendement (optimiste, pessimiste, modéré).
-- Rapport détaillé incluant le montant total investi, le montant total des intérêts gagnés, la valeur future et les revenus annuels.
-- Exportation du rapport au format PDF.
+- Input form to enter the monthly investment amount, annual return rate, number of investment years, and compounding frequency.
+- Calculation of the future value of investments with compound interest.
+- Calculation of annual income generated after the investment period.
+- Charts showing the growth of investments over time.
+- Comparison of different return scenarios (optimistic, pessimistic, moderate).
+- Detailed report including total amount invested, total interest earned, future value, and annual income.
+- Export the report in PDF format.
 
-## Technologies utilisées
+## Technologies Used
 
 ### Frontend
 
@@ -29,23 +29,23 @@ ProfitPlanner est une application web interactive conçue pour aider les utilisa
 
 ## Installation
 
-1. Clonez le dépôt : `git clone https://github.com/votrecompte/profitplanner.git`
-2. Installez les dépendances : `npm install`
+1. Clone the repository: `git clone https://github.com/youraccount/profitplanner.git`
+2. Install dependencies: `npm install`
 
-## Utilisation
+## Usage
 
-1. Démarrez le serveur backend : `npm run server`
-2. Démarrez l'application frontend : `npm start`
-3. Accédez à l'application sur `http://localhost:3000`
+1. Start the backend server: `npm run server`
+2. Start the frontend application: `npm start`
+3. Access the application at `http://localhost:3000`
 
-## Déploiement
+## Deployment
 
-L'application peut être déployée en utilisant Docker. Construisez l'image Docker avec `docker build -t profitplanner-app .` et exécutez un conteneur avec `docker run -p 3000:3000 profitplanner-app`.
+The application can be deployed using Docker. Build the Docker image with `docker build -t profitplanner-app .` and run a container with `docker run -p 3000:3000 profitplanner-app`.
 
-## Contributeurs
+## Contributors
 
 - [PapaPamplemousse](https://github.com/PapaPamplemousse)
 
-## Licence
+## License
 
-Ce projet est sous licence [GNU GENERAL PUBLIC LICENSE](LICENSE).
+This project is licensed under the [GNU GENERAL PUBLIC LICENSE](LICENSE).
